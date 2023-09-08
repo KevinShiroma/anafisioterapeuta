@@ -1,0 +1,73 @@
+.faq {
+  margin-bottom: 120px;
+}
+
+.faq dd {
+  padding: 18px;
+  font-weight: 600;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq dd::after {
+  content: url("../img/svg/flecha-faq.svg");
+  display: inline-flex;
+  text-align: right;
+  transition: transform 0.3s ease;
+}
+
+.faq dd.ativo::after {
+  content: url("../img/svg/flecha-faq.svg");
+  transform: rotate(180deg);
+  display: inline-flex;
+  text-align: right;
+}
+
+.faq dt {
+  margin-left: 40px;
+  font-size: 1rem;
+  display: none;
+  animation: show 0.5s forwards;
+}
+
+.faq dt.ativo {
+  display: block;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (max-width: 768px) {
+  .titulo-h1 {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .faq {
+    margin-bottom: 60px;
+  }
+  .faq dt {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+  }
+
+  .faq dt:last-child {
+    font-size: 1.25rem;
+    margin-bottom: 0px;
+  }
+
+  .faq dd::after {
+    align-self: start;
+  }
+}

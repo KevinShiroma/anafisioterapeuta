@@ -1,0 +1,62 @@
+.sobre {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 120px;
+  align-items: center;
+}
+
+.sobre-bg {
+  background: url("../img/bg-ana.jpg") repeat-x;
+  background-size: 1500px 450px;
+  box-shadow: inset 0 70px #ffffff;
+  box-shadow: inset 0 70px #ffffff, inset 0 -70px #ffffff;
+}
+
+.sobre h1 {
+  font-size: 2.25rem;
+  font-family: "Fira Sans";
+  letter-spacing: 1.8px;
+  margin-bottom: 24px;
+}
+.sobre p {
+  max-width: 41ch;
+  line-height: 30px;
+  font-size: 1.25rem;
+}
+
+.sobre-img img {
+  width: 380;
+  height: 507;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .sobre {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }
+
+  .sobre-bg {
+    background-image: url("../img/bg-ana.jpg");
+    box-shadow: initial;
+    height: auto;
+    background-repeat: repeat;
+  }
+
+  .sobre-desc {
+    grid-row: 1;
+    margin-bottom: 30px;
+    padding: 15px;
+  }
+
+  .sobre img {
+    height: 400px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  .sobre-img {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,17 @@
+@import url("./global.css");
+
+@import url("./origamid-menu.css");
+/* Tipografia */
+
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Fira+Sans&family=Poppins:wght@400;600&display=swap");
+
+/* página */
+@import url("./header.css");
+@import url("./intro.css");
+@import url("./sobre.css");
+@import url("./diferencial.css");
+@import url("./faq.css");
+@import url("./footer.css");
+
+/* Js */
+@import url("./numeros.css");
